@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid rgb(163, 0, 0) ;       */
+}
+
+/* ================================
+       NAVIGATION MENU 
+================================ */
+.menu{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.menu li{
+    list-style-type: none;
+    margin: 0 .7em .5em .7em;
+    padding: 1em 0 1em 0;
+    background-color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+menu a:hover{
+    background-color: rgb(197, 129, 129);
+}
+
+#name{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}   
+
+/* ================================
+            BODY
+================================ */
+body{
+    background-color: whitesmoke;
+}
+
+
+.profile-pic{
+    max-width: 768px;
+    width: 100% ; 
+    padding: 0 3em .5em 3em;
+    margin: 2em 0 1em 0;
+
+}
+
+.resume-text{
+    padding-bottom: 2em;
+    max-width: 768px;
+    text-align: center;
+    margin: 0 2em 0 2em;
+    color: rgb(0, 0, 0, .5);
+    font-size: 20px;
+}
+
+#open-text{
+    font-weight: bold;
+    text-transform:uppercase;
+    text-align: center;
+    padding-bottom: 2em;
+    font-size: 1em;
+}
+
+.images{
+    width: 100%;
+    max-width: 767px;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+.sections .sections-title{
+    color: rgb(0, 0, 0, .7);
+    margin-top: 1em;
+    text-align: center;
+    max-width: 768px;
+    font-weight: bold;
+}
+
+.sections .sections-text{
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 700px;
+    padding: 1em 2em 1em 2em;
+    margin-top: 1em;
+    font-size:1.2em;
+}
+
+
+.container{
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+
+#cont-text{
+    font-weight: bold;
+    text-transform:uppercase;
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 1em;
+}
+.contact{
+    padding: 3em 2em 2em 2em;
+    margin-bottom: 2em;
+    text-align: center;
+
+    
+
+}
+
+.contact p{
+    margin-top: 1em;
+    color: rgb(0, 0, 0, .5);
+    font-size: 20px;
+
+   
+}
+
+
+/* ================================
+            FOOTER
+================================ */
+
+
+.main-container{
+    min-height: calc(100vh - 100px);
+}
+
+
+footer {
+    height: 70px;
+    width: 90%;
+    margin-left:5%; 
+    margin-right:5%;
+    display: inline-block;
+    border-top: solid 2px rgb(143, 142, 142, .5);
+    padding-top: 2em;
+  }
+
+   .studname-footer {
+    width: 45%;
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+  .backtop-footer {
+      width: 45%;
+      float: right;
+      text-align: right;
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      font-weight: bold;
+ 
+  }
+
+   .footer-links{
+      display: none;
+      width: 45%;
+      text-align: right;
+      float: right;
+  } 
+  .footer-links a{
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      margin-right: .5em ;
+      font-weight: bold;
+  }
+
+
+/* ================================
+            MEDIA QUERIES
+================================ */
+
+/* TABLET */
+
+ @media screen and (min-width: 768px){  /*and (max-width: 1024px){ */
+
+    .menu{
+        flex-direction: row;
+        justify-content: center; 
+    }
+    .menu li{
+        background-color: transparent;
+        margin: 0 1.5em 0 1.5em;
+    }
+
+    .backtop-footer{
+        display: none;
+    }
+
+
+     .footer-links{
+        display: inline-block;
+    }
+    
+    .main-container{
+        min-height: calc(100vh - 130px);
+    }
+    
+    footer {
+        height: 100px;
+    }
+
+    .profile-pic{
+        max-width: 400px;
+        float: right;
+        margin:0;
+    }
+
+    header{
+        margin-bottom: 2em;
+    }
+
+    .resume-text{
+        padding-bottom: 3em;
+        text-align: left;
+        font-size: 25px;
+    }
+
+
+    .sections .images,.sections .sections-title, .sections .sections-text{
+        max-width: 450px;
+    }
+
+    .contact p{
+        padding: 0 4em 0 4em;
+    }
+
+
+    .sections{
+        display: inline-block;
+        width: 48%;
+        margin-right: -4px;
+      }
+      .sections:first-child{
+        margin-right: calc(4% - 4px);
+      }
+
+      .container{
+      padding-left: 3.5%;    /* how to center "sections" without this padding?*/
+      }
+    
+  
+
+}
+
+/* PC */
+
+@media screen and (min-width: 1024px){
+
+    .menu{
+        flex-direction: row;
+        float: right;
+        margin-right: 10%;
+    }
+    .menu li{
+        background-color: transparent;
+        margin: 0 1.5em 0 1.5em;
+    }
+
+    .outer-menu{
+      margin-top: 3em;
+      margin-right: 2em;
+      float: right;
+    }
+
+    #name{
+      margin-top: 1.7em;
+      margin-left: 2em;
+      font-size: 30px;
+      float: left;
+    }
+
+    .backtop-footer{
+        display: none;
+    }
+
+    .footer-links{
+        display: inline-block;
+    }
+
+    header{
+        padding-bottom: 7em;
+    }
+
+    .profile-pic{
+        max-width: 600px;
+        margin-right: 3em;
+    }
+
+    .resume-text{
+        padding-bottom: 7em;
+        padding-left: 2em;
+        font-size: 30px;
+        text-align: left;
+        max-width: 1000px;
+
+    }
+ 
+    .sections{
+        width: 33%;
+    }
+
+  
+}   
